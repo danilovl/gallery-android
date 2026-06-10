@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Galerij</string>
+    <string name="tab_day">Dag</string>
+    <string name="tab_month">Maand</string>
+    <string name="tab_timeline">Tijdlijn</string>
+    <string name="permission_rationale">Toegang tot foto\'s is nodig om je galerij te tonen</string>
+    <string name="permission_grant">Toegang verlenen</string>
+    <string name="empty_day">Geen foto\'s gemaakt op %1$s</string>
+    <string name="empty_month">Geen foto\'s uit %1$s</string>
+    <string name="empty_timeline">Geen foto\'s</string>
+</resources>

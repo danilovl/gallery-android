@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Galerie</string>
+    <string name="tab_day">Den</string>
+    <string name="tab_month">Měsíc</string>
+    <string name="tab_timeline">Časová osa</string>
+    <string name="permission_rationale">Pro zobrazení galerie je vyžadován přístup k fotografiím</string>
+    <string name="permission_grant">Udělit přístup</string>
+    <string name="empty_day">Žádné fotky z %1$s</string>
+    <string name="empty_month">Žádné fotky z %1$s</string>
+    <string name="empty_timeline">Žádné fotky</string>
+</resources>

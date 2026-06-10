@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Galleria</string>
+    <string name="tab_day">Giorno</string>
+    <string name="tab_month">Mese</string>
+    <string name="tab_timeline">Cronologia</string>
+    <string name="permission_rationale">È necessario l\'accesso alle foto per mostrare la galleria</string>
+    <string name="permission_grant">Consenti accesso</string>
+    <string name="empty_day">Nessuna foto scattata di %1$s</string>
+    <string name="empty_month">Nessuna foto di %1$s</string>
+    <string name="empty_timeline">Nessuna foto</string>
+</resources>

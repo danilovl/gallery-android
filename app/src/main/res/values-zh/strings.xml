@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">相册</string>
+    <string name="tab_day">日</string>
+    <string name="tab_month">月</string>
+    <string name="tab_timeline">时间线</string>
+    <string name="permission_rationale">需要照片访问权限才能显示您的相册</string>
+    <string name="permission_grant">授予访问权限</string>
+    <string name="empty_day">没有在%1$s拍摄的照片</string>
+    <string name="empty_month">没有%1$s的照片</string>
+    <string name="empty_timeline">没有照片</string>
+</resources>
