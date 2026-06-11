@@ -201,9 +201,14 @@ private fun buildSections(sortedPhotos: List<Photo>, subGroup: SubGroup): List<S
     return result
 }
 
-private fun subGroupKey(photo: Photo, subGroup: SubGroup): Int = when (subGroup) {
-    SubGroup.MONTH -> DateUtils.month(photo.dateTaken)
-    SubGroup.DAY -> DateUtils.month(photo.dateTaken) * 100 + DateUtils.dayOfMonth(photo.dateTaken)
+private fun subGroupKey(photo: Photo, subGroup: SubGroup): Int {
+    val year = DateUtils.year(photo.dateTaken)
+    val month = DateUtils.month(photo.dateTaken)
+    val day = DateUtils.dayOfMonth(photo.dateTaken)
+    return when (subGroup) {
+        SubGroup.MONTH -> year * 100 + month
+        SubGroup.DAY -> (year * 100 + month) * 100 + day
+    }
 }
 
 private fun subGroupLabel(photo: Photo, subGroup: SubGroup): String = when (subGroup) {
