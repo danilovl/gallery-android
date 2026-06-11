@@ -11,6 +11,8 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material3.FilterChip
+import androidx.compose.material3.FilterChipDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -43,14 +45,18 @@ fun <T> ChipFilterScreen(
         LazyRow(
             state = listState,
             modifier = Modifier
-                .padding(start = 8.dp, end = 24.dp, top = 8.dp, bottom = 8.dp),
+                .padding(start = 8.dp, end = 24.dp, top = 4.dp, bottom = 4.dp),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             itemsIndexed(items) { index, item ->
                 FilterChip(
                     selected = selectedIndex == index,
                     onClick = { selectedIndex = index },
-                    label = { Text(label(item)) }
+                    label = { Text(label(item)) },
+                    colors = FilterChipDefaults.filterChipColors(
+                        selectedContainerColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.12f),
+                        selectedLabelColor = MaterialTheme.colorScheme.onSurface,
+                    )
                 )
             }
         }

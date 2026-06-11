@@ -9,6 +9,41 @@ import androidx.compose.ui.unit.dp
 
 object GalleryIcons {
 
+    val Language: ImageVector by lazy {
+        buildIcon {
+            moveTo(12f, 2f)
+            curveTo(6.48f, 2f, 2f, 6.48f, 2f, 12f)
+            reflectiveCurveTo(6.48f, 22f, 12f, 22f)
+            reflectiveCurveTo(22f, 17.52f, 22f, 12f)
+            reflectiveCurveTo(17.52f, 2f, 12f, 2f)
+            close()
+            moveTo(11f, 19.93f)
+            curveTo(7.05f, 19.44f, 4f, 16.08f, 4f, 12f)
+            curveTo(4f, 11.38f, 4.08f, 10.79f, 4.21f, 10.21f)
+            lineTo(9f, 15f)
+            verticalLineTo(16f)
+            curveTo(9f, 17.1f, 9.9f, 18f, 11f, 18f)
+            verticalLineTo(19.93f)
+            close()
+            moveTo(17.9f, 17.39f)
+            curveTo(17.64f, 16.58f, 16.9f, 16f, 16f, 16f)
+            horizontalLineTo(15f)
+            verticalLineTo(13f)
+            curveTo(15f, 12.45f, 14.55f, 12f, 14f, 12f)
+            horizontalLineTo(8f)
+            verticalLineTo(10f)
+            horizontalLineTo(10f)
+            curveTo(10.55f, 10f, 11f, 9.55f, 11f, 9f)
+            verticalLineTo(7f)
+            horizontalLineTo(13f)
+            curveTo(14.1f, 7f, 15f, 6.1f, 15f, 5f)
+            verticalLineTo(4.59f)
+            curveTo(17.93f, 5.77f, 20f, 8.64f, 20f, 12f)
+            curveTo(20f, 14.08f, 19.2f, 15.97f, 17.9f, 17.39f)
+            close()
+        }
+    }
+
     val Day: ImageVector by lazy {
         buildIcon { rect(5f, 5f, 19f, 19f) }
     }

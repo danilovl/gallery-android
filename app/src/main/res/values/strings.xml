@@ -3,7 +3,8 @@
     <string name="app_name">Gallery</string>
     <string name="tab_day">Day</string>
     <string name="tab_month">Month</string>
-    <string name="tab_timeline">Timeline</string>
+    <string name="tab_timeline">List</string>
+    <string name="tab_language">Language</string>
     <string name="permission_rationale">Photo access is needed to show your gallery</string>
     <string name="permission_grant">Grant access</string>
     <string name="empty_day">No photos taken on %1$s</string>

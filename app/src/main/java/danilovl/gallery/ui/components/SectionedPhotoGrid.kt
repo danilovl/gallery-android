@@ -64,7 +64,7 @@ fun SectionedPhotoGrid(
 
     val gridState = rememberLazyGridState()
     val density = LocalDensity.current
-    val headerHeightPx = remember(density) { with(density) { 48.dp.toPx() } }
+    val headerHeightPx = remember(density) { with(density) { 40.dp.toPx() } }
 
     val stickyHeaderInfo by remember(sections, headerHeightPx) {
         derivedStateOf {
@@ -160,7 +160,7 @@ private fun SubHeader(label: String) {
         fontWeight = FontWeight.Bold,
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 12.dp)
+            .padding(horizontal = 16.dp, vertical = 8.dp)
     )
 }
 
@@ -170,7 +170,7 @@ private fun StickyHeaderOverlay(label: String, offsetY: Float) {
         color = MaterialTheme.colorScheme.surface,
         modifier = Modifier
             .fillMaxWidth()
-            .height(48.dp)
+            .height(40.dp)
             .graphicsLayer { translationY = offsetY }
     ) {
         Box(contentAlignment = Alignment.CenterStart) {
