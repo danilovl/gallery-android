@@ -48,6 +48,18 @@ object GalleryIcons {
         buildIcon { rect(5f, 5f, 19f, 19f) }
     }
 
+    val Calendar: ImageVector by lazy {
+        buildIcon {
+            rect(4f, 6f, 20f, 20f)
+            moveTo(4f, 10f)
+            lineTo(20f, 10f)
+            moveTo(8f, 4f)
+            lineTo(8f, 8f)
+            moveTo(16f, 4f)
+            lineTo(16f, 8f)
+        }
+    }
+
     val Month: ImageVector by lazy {
         buildIcon {
             rect(4f, 4f, 10.5f, 10.5f)

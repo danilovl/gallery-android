@@ -70,6 +70,7 @@ import danilovl.gallery.GalleryViewModel
 import danilovl.gallery.R
 import danilovl.gallery.ui.icons.GalleryIcons
 import danilovl.gallery.ui.screens.DayScreen
+import danilovl.gallery.ui.screens.OnThisDayScreen
 import danilovl.gallery.ui.screens.MonthScreen
 import danilovl.gallery.ui.screens.TimelineScreen
 import danilovl.gallery.util.LocaleHelper
@@ -77,6 +78,7 @@ import java.util.Locale
 
 private enum class Tab(@get:StringRes val titleRes: Int, val icon: ImageVector) {
     LANGUAGE(R.string.tab_language, GalleryIcons.Language),
+    ON_THIS_DAY(R.string.tab_on_this_day, GalleryIcons.Calendar),
     DAY(R.string.tab_day, GalleryIcons.Day),
     MONTH(R.string.tab_month, GalleryIcons.Month),
     TIMELINE(R.string.tab_timeline, GalleryIcons.Timeline)
@@ -106,7 +108,7 @@ fun GalleryApp(
         ActivityResultContracts.RequestPermission()
     ) { granted -> hasPermission = granted }
 
-    val pagerState = rememberPagerState(initialPage = Tab.DAY.ordinal) { Tab.entries.size }
+    val pagerState = rememberPagerState(initialPage = Tab.ON_THIS_DAY.ordinal) { Tab.entries.size }
     val scope = rememberCoroutineScope()
 
     LaunchedEffect(hasPermission) {
@@ -138,6 +140,7 @@ fun GalleryApp(
                 stateHolder.SaveableStateProvider(tab) {
                     when (tab) {
                         Tab.LANGUAGE -> LanguageScreen(onLanguageSelected)
+                        Tab.ON_THIS_DAY -> OnThisDayScreen(photos)
                         Tab.DAY -> DayScreen(photos)
                         Tab.MONTH -> MonthScreen(photos)
                         Tab.TIMELINE -> TimelineScreen(photos)

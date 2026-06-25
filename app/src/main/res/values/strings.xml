@@ -2,12 +2,14 @@
 <resources>
     <string name="app_name">Gallery</string>
     <string name="tab_day">Day</string>
+    <string name="tab_on_this_day">On this day</string>
     <string name="tab_month">Month</string>
     <string name="tab_timeline">List</string>
     <string name="tab_language">Language</string>
     <string name="permission_rationale">Photo access is needed to show your gallery</string>
     <string name="permission_grant">Grant access</string>
     <string name="empty_day">No photos taken on %1$s</string>
+    <string name="empty_on_this_day">No photos taken on %1$s in previous years</string>
     <string name="empty_month">No photos from %1$s</string>
     <string name="empty_timeline">No photos</string>
 </resources>

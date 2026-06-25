@@ -43,6 +43,15 @@ object DateUtils {
     fun monthFull(month: Int, locale: Locale = Locale.getDefault()): String =
         symbols(locale).months[month].capitalizeFirst()
 
+    fun formatDayMonth(day: Int, month: Int, locale: Locale = Locale.getDefault()): String {
+        val cal = Calendar.getInstance().apply {
+            set(Calendar.DAY_OF_MONTH, day)
+            set(Calendar.MONTH, month)
+        }
+        val sdf = java.text.SimpleDateFormat("d MMMM", locale)
+        return sdf.format(cal.time)
+    }
+
     fun formatDateTime(millis: Long, locale: Locale = Locale.getDefault()): String {
         val sdf = java.text.SimpleDateFormat("d MMMM yyyy, HH:mm", locale)
         return sdf.format(java.util.Date(millis))

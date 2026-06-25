@@ -6,6 +6,7 @@ Modern Android gallery application for viewing local photos, built with Jetpack 
 
 | Feature | Description |
 | :--- | :--- |
+| **On This Day** | Memories from today in previous years. |
 | **Day View** | Group photos by day of the week. |
 | **Month View** | Group photos by month of the year. |
 | **Timeline** | Continuous scrollable list of all photos. |
